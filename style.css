@@ -1,0 +1,138 @@
+body{
+  
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+
+    
+}
+/* =============hero secion ====== */
+.hero {
+    height: 50vh;
+    position: relative;
+
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero > div {
+   position: absolute;
+   top: 15vh;
+   left: 28vw;
+   background: rgba(0, 0, 0, 0.387);
+   color: rgba(255, 255, 255, 0.823);
+   width: 45%;
+   padding: 1rem;
+   border-radius: 10px;
+   backdrop-filter: blur(2px);
+
+}
+.logo > img{
+    border-radius: 50%;
+    margin-top: 5px;
+
+}
+
+/* ===============nav bar section ========== */
+.top-menu  {
+    background: rgba(147, 134, 134, 0.507);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(2px);
+    z-index: 100;
+    /* margin-top: -5px; */
+}
+.top-menu > div{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    
+
+}
+
+.top-menu ul {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+/* .top-menu ul li {
+    transition: all 1s;
+}  : transition can be done like this also*/
+.top-menu ul li:hover {
+color: pink;
+cursor: pointer;
+transform: scale(1.3);
+transition: all 3s;
+}
+
+/* ===========content section ============== */
+
+.img1,.img2,.img3,.img4{
+ height: 60vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+.img1{
+    height: 80dvh;
+    background: url(./img/1.jpg)center center no-repeat;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    /* aspect-ratio:4/2 ; */
+}
+
+.img2{
+    background: url(./img/2.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+.img3{
+    background: url(./img/3.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img4{
+    background: url(./img/4.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title{
+    background: rgba(0, 0, 0, 0.445);
+    color: white;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    backdrop-filter: blur(2px);
+}
+
+
+ /* =================footer================ */
+
+ footer {
+    background: black;
+    padding: 3rem;
+    color: antiquewhite;
+    text-align: center;
+ }
